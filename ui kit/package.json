@@ -49,10 +49,7 @@
   "files": [
     "dist"
   ],
-  "sideEffects": [
-    "**/*.css",
-    "src/components/**/*.ts"
-  ],
+  "sideEffects": true,
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc --noEmit && vite build && vite build --config vite.global.config.ts",

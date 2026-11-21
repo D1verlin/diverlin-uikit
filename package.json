@@ -51,10 +51,7 @@
     "skills",
     "README.md"
   ],
-  "sideEffects": [
-    "**/*.css",
-    "dist/**/*.js"
-  ],
+  "sideEffects": true,
   "scripts": {
     "build:uikit": "npm --prefix \"ui kit\" run build && node -e \"const fs=require('fs');fs.rmSync('dist',{recursive:true,force:true});fs.cpSync('ui kit/dist','dist',{recursive:true});\"",
     "build:docs": "npm --prefix \"guideline website\" run build",
