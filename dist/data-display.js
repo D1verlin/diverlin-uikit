@@ -2,7 +2,7 @@ var N = Object.defineProperty;
 var I = (o, e, t) => e in o ? N(o, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : o[e] = t;
 var d = (o, e, t) => I(o, typeof e != "symbol" ? e + "" : e, t);
 import { d as c, a as v, D as p, e as l } from "./icons-D-sxLAgG.js";
-class w extends v {
+class k extends v {
   static get componentStyles() {
     return `
       :host { display: block; }
@@ -12,6 +12,8 @@ class w extends v {
         font-family: var(--dv-font-display);
         font-weight: 400;
         letter-spacing: -0.015em;
+        overflow-wrap: break-word;
+        word-break: break-word;
       }
       .font-sans { font-family: var(--dv-font-sans); font-weight: 700; letter-spacing: -0.02em; }
       .font-alt { font-family: var(--dv-font-alt); font-weight: 700; letter-spacing: -0.015em; }
@@ -31,8 +33,8 @@ class w extends v {
     this.root.innerHTML = `<${r} class="${s}" style="text-align:${i}"><slot></slot></${r}>`;
   }
 }
-d(w, "observedAttributes", ["level", "font", "align", "balance"]);
-c("dv-heading", w);
+d(k, "observedAttributes", ["level", "font", "align", "balance"]);
+c("dv-heading", k);
 class $ extends v {
   static get componentStyles() {
     return `
@@ -400,8 +402,8 @@ class M extends v {
     this._sortCol === t ? this._sortAsc = !this._sortAsc : (this._sortCol = t, this._sortAsc = !0);
     const r = Array.from(a.querySelectorAll("tr"));
     r.sort((s, n) => {
-      var m, b, y, k;
-      const h = ((b = (m = s.children[t]) == null ? void 0 : m.textContent) == null ? void 0 : b.trim()) ?? "", u = ((k = (y = n.children[t]) == null ? void 0 : y.textContent) == null ? void 0 : k.trim()) ?? "", f = Number(h.replace(/[^\d.-]/g, "")), x = Number(u.replace(/[^\d.-]/g, "")), g = h !== "" && u !== "" && Number.isFinite(f) && Number.isFinite(x) && /\d/.test(h) && /\d/.test(u) ? f - x : h.localeCompare(u, "ru");
+      var m, b, y, w;
+      const h = ((b = (m = s.children[t]) == null ? void 0 : m.textContent) == null ? void 0 : b.trim()) ?? "", u = ((w = (y = n.children[t]) == null ? void 0 : y.textContent) == null ? void 0 : w.trim()) ?? "", f = Number(h.replace(/[^\d.-]/g, "")), x = Number(u.replace(/[^\d.-]/g, "")), g = h !== "" && u !== "" && Number.isFinite(f) && Number.isFinite(x) && /\d/.test(h) && /\d/.test(u) ? f - x : h.localeCompare(u, "ru");
       return this._sortAsc ? g : -g;
     }), r.forEach((s) => a.appendChild(s)), this.syncTableStyles(), this.emit("dv-sort", { column: t, ascending: this._sortAsc });
   }
@@ -955,7 +957,7 @@ export {
   A as DvBadge,
   E as DvCode,
   C as DvDivider,
-  w as DvHeading,
+  k as DvHeading,
   z as DvIcon,
   D as DvKbd,
   T as DvProgress,

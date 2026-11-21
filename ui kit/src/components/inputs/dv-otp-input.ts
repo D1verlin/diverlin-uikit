@@ -5,11 +5,13 @@ export class DvOtpInput extends DvBaseElement {
 
   protected static get componentStyles(): string {
     return `
-      :host { display: inline-flex; }
+      :host { display: inline-flex; max-width: 100%; }
       .row {
         display: inline-flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: var(--dv-space-2);
+        max-width: 100%;
       }
       input {
         width: 42px;
@@ -25,6 +27,10 @@ export class DvOtpInput extends DvBaseElement {
         text-align: center;
         outline: none;
         transition: opacity var(--dv-duration-fast) var(--dv-ease), transform var(--dv-duration-fast) var(--dv-ease);
+      }
+      @media (max-width: 480px) {
+        .row { gap: 6px; }
+        input { width: 36px; height: 42px; font-size: 1rem; }
       }
       .size-sm input { width: 34px; height: 38px; font-size: 0.95rem; }
       .size-lg input { width: 50px; height: 54px; font-size: 1.25rem; }

@@ -68,19 +68,19 @@ const app = document.querySelector<HTMLDivElement>('#app')!;
 
 app.innerHTML = `
   <dv-app-shell id="shell" sidebar-width="240px">
-    <div slot="header" style="display:flex;align-items:center;justify-content:space-between;width:100%;gap:16px;">
+    <div slot="header" class="site-header-row">
       <a href="#/overview" class="site-brand">
         <dv-icon name="layers" size="20"></dv-icon>
         <span class="site-brand-title">Diverlin UI</span>
       </a>
 
-      <div style="display:flex;align-items:center;gap:10px;">
+      <div class="site-header-actions">
         <dv-button id="global-search-btn" variant="secondary" size="sm">
           <dv-icon name="search" size="14"></dv-icon>
-          <span>Поиск</span>
-          <dv-kbd>Alt+K</dv-kbd>
+          <span class="search-btn-label">Поиск</span>
+          <span class="search-btn-kbd"><dv-kbd>Alt+K</dv-kbd></span>
         </dv-button>
-        <div style="width:132px;">
+        <div class="header-accent-wrap">
           <dv-select
             id="accent-switcher"
             size="sm"
@@ -88,11 +88,16 @@ app.innerHTML = `
             options='${JSON.stringify(ACCENT_PRESETS.map((a) => ({ label: a.label, value: a.id })))}'
           ></dv-select>
         </div>
-        <dv-segmented
-          id="theme-switcher"
-          value="${getTheme()}"
-          items='[{"id":"light","label":"Светлая"},{"id":"dark","label":"Тёмная"}]'
-        ></dv-segmented>
+        <div class="header-theme-desktop">
+          <dv-segmented
+            id="theme-switcher"
+            value="${getTheme()}"
+            items='[{"id":"light","label":"Светлая"},{"id":"dark","label":"Тёмная"}]'
+          ></dv-segmented>
+        </div>
+        <div class="header-theme-mobile">
+          <dv-theme-toggle id="theme-toggle-mobile" size="sm"></dv-theme-toggle>
+        </div>
       </div>
     </div>
 
@@ -836,6 +841,11 @@ navigate();
 document.getElementById('theme-switcher')?.addEventListener('dv-change', (e) => {
   const detail = (e as CustomEvent<{ value: DvTheme }>).detail;
   setTheme(detail.value);
+});
+
+document.getElementById('theme-toggle-mobile')?.addEventListener('dv-theme-change', (e) => {
+  const detail = (e as CustomEvent<{ theme: DvTheme }>).detail;
+  document.getElementById('theme-switcher')?.setAttribute('value', detail.theme);
 });
 
 document.getElementById('accent-switcher')?.addEventListener('dv-change', (e) => {

@@ -43,7 +43,7 @@ class S extends k {
 }
 u(S, "observedAttributes", ["label", "hint", "error", "required"]);
 y("dv-field", S);
-class _ extends k {
+class z extends k {
   constructor() {
     super(...arguments);
     u(this, "_syncing", !1);
@@ -120,9 +120,9 @@ class _ extends k {
     });
   }
 }
-u(_, "observedAttributes", ["type", "value", "placeholder", "disabled", "readonly", "error", "size", "name"]);
-y("dv-input", _);
-class z extends k {
+u(z, "observedAttributes", ["type", "value", "placeholder", "disabled", "readonly", "error", "size", "name"]);
+y("dv-input", z);
+class _ extends k {
   constructor() {
     super(...arguments);
     u(this, "_syncing", !1);
@@ -196,8 +196,8 @@ class z extends k {
     });
   }
 }
-u(z, "observedAttributes", ["value", "placeholder", "rows", "disabled", "readonly", "error"]);
-y("dv-textarea", z);
+u(_, "observedAttributes", ["value", "placeholder", "rows", "disabled", "readonly", "error"]);
+y("dv-textarea", _);
 class L extends k {
   constructor() {
     super(...arguments);
@@ -1978,11 +1978,13 @@ class F extends k {
   }
   static get componentStyles() {
     return `
-      :host { display: inline-flex; }
+      :host { display: inline-flex; max-width: 100%; }
       .row {
         display: inline-flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: var(--dv-space-2);
+        max-width: 100%;
       }
       input {
         width: 42px;
@@ -1998,6 +2000,10 @@ class F extends k {
         text-align: center;
         outline: none;
         transition: opacity var(--dv-duration-fast) var(--dv-ease), transform var(--dv-duration-fast) var(--dv-ease);
+      }
+      @media (max-width: 480px) {
+        .row { gap: 6px; }
+        input { width: 36px; height: 42px; font-size: 1rem; }
       }
       .size-sm input { width: 34px; height: 38px; font-size: 0.95rem; }
       .size-lg input { width: 50px; height: 54px; font-size: 1.25rem; }
@@ -2055,14 +2061,14 @@ export {
   H as DvDatePicker,
   S as DvField,
   O as DvFilePicker,
-  _ as DvInput,
+  z as DvInput,
   D as DvNumberInput,
   F as DvOtpInput,
   q as DvRadio,
   j as DvSearch,
   L as DvSelect,
   M as DvSlider,
-  z as DvTextarea,
+  _ as DvTextarea,
   E as DvToggle
 };
 //# sourceMappingURL=inputs.js.map

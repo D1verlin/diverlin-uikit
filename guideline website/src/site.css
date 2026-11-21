@@ -1,14 +1,78 @@
+.site-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  gap: var(--dv-space-2);
+}
+
 .site-brand {
   display: flex;
   align-items: center;
   gap: var(--dv-space-2);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .site-brand-title {
   font-family: var(--dv-font-display);
-  font-size: 1rem;
+  font-size: 0.95rem;
   letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.header-accent-wrap {
+  width: 104px;
+  flex-shrink: 0;
+}
+
+.header-theme-desktop {
+  display: none;
+}
+
+.header-theme-mobile {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.search-btn-label,
+.search-btn-kbd {
+  display: none;
+}
+
+@media (min-width: 560px) {
+  .search-btn-label {
+    display: inline;
+  }
+  .site-header-actions {
+    gap: 10px;
+  }
+  .header-accent-wrap {
+    width: 128px;
+  }
+  .site-brand-title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .search-btn-kbd {
+    display: inline-flex;
+  }
+  .header-theme-desktop {
+    display: inline-flex;
+  }
+  .header-theme-mobile {
+    display: none;
+  }
 }
 
 .sidebar-group {
@@ -65,8 +129,11 @@
 }
 
 .preview-stage {
-  min-height: 200px;
-  padding: var(--dv-space-6) 0;
+  min-height: 180px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: var(--dv-space-4) 0;
   background: transparent;
   display: flex;
   align-items: center;
@@ -75,12 +142,23 @@
 
 .controls-panel {
   --dv-surface: var(--dv-surface-elevated);
-  padding: var(--dv-space-5);
+  padding: var(--dv-space-4);
   border-radius: var(--dv-radius-md);
   background: #f2f3f5;
   display: flex;
   flex-direction: column;
   gap: var(--dv-space-4);
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  .preview-stage {
+    min-height: 200px;
+    padding: var(--dv-space-6) 0;
+  }
+  .controls-panel {
+    padding: var(--dv-space-5);
+  }
 }
 
 [data-theme='dark'] .controls-panel {
@@ -89,7 +167,7 @@
 
 .swatch-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
   gap: var(--dv-space-4);
 }
 
@@ -97,6 +175,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--dv-space-2);
+  min-width: 0;
 }
 
 .swatch-color {
@@ -107,12 +186,15 @@
 .spacing-row {
   display: flex;
   align-items: center;
-  gap: var(--dv-space-4);
+  gap: var(--dv-space-3);
   font-size: var(--dv-text-sm);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .spacing-bar {
   height: 10px;
+  max-width: 100%;
   background: var(--dv-accent);
   border-radius: 2px;
 }

@@ -12,6 +12,8 @@ export class DvHeading extends DvBaseElement {
         font-family: var(--dv-font-display);
         font-weight: 400;
         letter-spacing: -0.015em;
+        overflow-wrap: break-word;
+        word-break: break-word;
       }
       .font-sans { font-family: var(--dv-font-sans); font-weight: 700; letter-spacing: -0.02em; }
       .font-alt { font-family: var(--dv-font-alt); font-weight: 700; letter-spacing: -0.015em; }
