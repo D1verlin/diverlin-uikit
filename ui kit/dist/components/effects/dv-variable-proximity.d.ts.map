@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-variable-proximity.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-variable-proximity.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,mBAAoB,SAAQ,aAAa;IACpD,MAAM,CAAC,kBAAkB,WAAsB;IAE/C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAqB7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAuCzB"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-text.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-text.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,MAAO,SAAQ,aAAa;IACvC,MAAM,CAAC,kBAAkB,WAAqD;IAE9E,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAyB7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAqBzB"}

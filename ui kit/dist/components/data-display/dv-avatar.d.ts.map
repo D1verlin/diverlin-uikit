@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-avatar.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-avatar.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,QAAS,SAAQ,aAAa;IACzC,MAAM,CAAC,kBAAkB,WAAkC;IAE3D,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA2B7C;IAED,OAAO,CAAC,WAAW;IAOnB,SAAS,CAAC,MAAM,IAAI,IAAI;CAazB"}

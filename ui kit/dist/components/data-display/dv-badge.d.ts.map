@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-badge.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-badge.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,OAAQ,SAAQ,aAAa;IACxC,MAAM,CAAC,kBAAkB,WAAuB;IAEhD,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA6B7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAKzB"}

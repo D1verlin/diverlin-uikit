@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-stack.d.ts","sourceRoot":"","sources":["../../../src/components/layout/dv-stack.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,OAAQ,SAAQ,aAAa;IACxC,MAAM,CAAC,kBAAkB,WAAoD;IAE7E,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAK7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAczB"}

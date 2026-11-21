@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-skeleton.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-skeleton.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,UAAW,SAAQ,aAAa;IAC3C,MAAM,CAAC,kBAAkB,WAAqD;IAE9E,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA4B7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAuDzB"}

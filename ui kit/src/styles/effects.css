@@ -1,0 +1,117 @@
+/* Diverlin UI Kit — Minimalist Text & Hover Effects
+   Strict compliance: transform & opacity only (120–240ms), no neon glow, no indigo gradients. */
+
+/* 1. Animated underline link (left-to-right scaleX) */
+.dv-link-underline {
+  position: relative;
+  display: inline-block;
+  color: var(--dv-text-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dv-link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--dv-duration-base) var(--dv-ease);
+}
+
+.dv-link-underline:hover::after,
+.dv-link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* 2. Smooth text reveal */
+.dv-text-reveal {
+  animation: dv-reveal var(--dv-duration-slow) var(--dv-ease) both;
+}
+
+@keyframes dv-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 3. Neutral tonal shimmer (no rainbow/indigo gradients) */
+.dv-text-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--dv-text-muted) 0%,
+    var(--dv-text-primary) 50%,
+    var(--dv-text-muted) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: dv-shimmer 2.4s linear infinite;
+}
+
+@keyframes dv-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* 4. Multi-line text clamp */
+.dv-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dv-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 5. Hover lift (transform only, no scale) */
+.dv-hover-lift {
+  transition: transform var(--dv-duration-base) var(--dv-ease);
+}
+
+.dv-hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* 6. Hover arrow slide */
+.dv-hover-arrow .dv-arrow {
+  display: inline-flex;
+  transition: transform var(--dv-duration-fast) var(--dv-ease);
+}
+
+.dv-hover-arrow:hover .dv-arrow {
+  transform: translateX(3px);
+}
+
+/* 7. Hover dim siblings (highlights hovered item in a list) */
+.dv-hover-dim-group > * {
+  transition: opacity var(--dv-duration-fast) var(--dv-ease);
+}
+
+.dv-hover-dim-group:hover > *:not(:hover) {
+  opacity: 0.5;
+}
+
+/* 8. Tactile press feedback */
+.dv-pressable {
+  transition: transform var(--dv-duration-fast) var(--dv-ease);
+}
+
+.dv-pressable:active {
+  transform: scale(0.97);
+}

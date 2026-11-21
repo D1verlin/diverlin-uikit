@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-spinner.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-spinner.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,SAAU,SAAQ,aAAa;IAC1C,MAAM,CAAC,kBAAkB,WAAqB;IAE9C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAkB7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAQzB"}

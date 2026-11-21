@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-code.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-code.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAGnF,qBAAa,MAAO,SAAQ,aAAa;IACvC,MAAM,CAAC,kBAAkB,WAAoB;IAE7C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA4C7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAgCzB"}

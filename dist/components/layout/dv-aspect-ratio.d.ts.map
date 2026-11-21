@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-aspect-ratio.d.ts","sourceRoot":"","sources":["../../../src/components/layout/dv-aspect-ratio.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,aAAc,SAAQ,aAAa;IAC9C,MAAM,CAAC,kBAAkB,WAA8B;IAEvD,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAmB7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAWzB"}

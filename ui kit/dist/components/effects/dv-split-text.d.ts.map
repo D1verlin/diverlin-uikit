@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-split-text.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-split-text.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,WAAY,SAAQ,aAAa;IAC5C,MAAM,CAAC,kBAAkB,WAA6B;IAEtD,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAgC7C;IAEM,MAAM,IAAI,IAAI;IAIrB,SAAS,CAAC,MAAM,IAAI,IAAI;CAiBzB"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-tag.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-tag.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAGvE,qBAAa,KAAM,SAAQ,aAAa;IACtC,MAAM,CAAC,kBAAkB,WAAyC;IAElE,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAuC7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAkCzB"}

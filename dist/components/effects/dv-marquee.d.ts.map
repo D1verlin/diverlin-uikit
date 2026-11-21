@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-marquee.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-marquee.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,SAAU,SAAQ,aAAa;IAC1C,MAAM,CAAC,kBAAkB,WAAqD;IAE9E,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAuC7C;IAED,OAAO,CAAC,QAAQ;IAShB,SAAS,CAAC,MAAM,IAAI,IAAI;CAezB"}

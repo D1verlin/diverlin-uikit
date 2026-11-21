@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-pagination.d.ts","sourceRoot":"","sources":["../../../src/components/navigation/dv-pagination.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAGvE,qBAAa,YAAa,SAAQ,aAAa;IAC7C,MAAM,CAAC,kBAAkB,WAAqB;IAE9C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAoC7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAsCzB"}

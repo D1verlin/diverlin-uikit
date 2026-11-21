@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-stat.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-stat.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,MAAO,SAAQ,aAAa;IACvC,MAAM,CAAC,kBAAkB,WAAgD;IAEzE,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA2C7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAkBzB"}

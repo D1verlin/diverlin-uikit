@@ -1,0 +1,93 @@
+/*
+ * PulseSync Design Tokens
+ * All components use --ps-* with fallback to canonical theme variables.
+ * To theme the kit: set in :root or [data-theme='…'] the variables below
+ * (e.g. --background, --surface-primary, --text-primary, --accent).
+ * Same set is used on the website and in the client (theme-tokens.css)
+ * so you can change colors in one place. --ps-* mirror those variables.
+ */
+
+:root {
+    --ps-background: var(--background, #040404);
+    --ps-background-rgb: var(--background-rgb, 4, 4, 4);
+    --ps-foreground: var(--foreground, #ffffff);
+
+    --ps-surface-primary: var(--surface-primary, #0a0a0a);
+    --ps-surface-secondary: var(--surface-secondary, #111111);
+    --ps-surface-tertiary: var(--surface-tertiary, #1a1a1a);
+    --ps-surface-elevated: var(--surface-elevated, #222222);
+
+    --ps-border: var(--border, #2a2a2a);
+    --ps-border-hover: var(--border-hover, #404040);
+    --ps-line: var(--line, rgba(255, 255, 255, 0.1));
+
+    --ps-text-primary: var(--text-primary, #ffffff);
+    --ps-text-secondary: var(--text-secondary, #a0a0a0);
+    --ps-text-muted: var(--text-muted, #666666);
+    --ps-text-disabled: var(--text-disabled, #404040);
+
+    --ps-hover: var(--hover, rgba(255, 255, 255, 0.05));
+    --ps-active: var(--active, rgba(255, 255, 255, 0.1));
+    --ps-focus-ring: var(--focus-ring, rgba(255, 255, 255, 0.3));
+
+    --ps-accent: var(--accent, #ffffff);
+    --ps-accent-muted: var(--accent-muted, #888888);
+    --ps-accent-foreground: var(--accent-foreground, #040404);
+    --ps-nav-active: var(--accent, #5865f2);
+
+    --ps-danger: var(--danger, #ff4444);
+    --ps-success: var(--success, #44ff88);
+    --ps-warning: var(--warning, #ffaa44);
+
+    --ps-skeleton-base: var(--skeleton-base, #1a1a1a);
+    --ps-skeleton-highlight: var(--skeleton-highlight, #2a2a2a);
+
+    --ps-transition: var(--transition, cubic-bezier(0.45, 0.65, 0.395, 1) all 0.2s);
+    --ps-transition-easing: cubic-bezier(0.45, 0.65, 0.395, 1);
+    --ps-font-family: var(--font-family, 'Nunito'), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* V4 typography scale (Figma: Redesign / Heading Scale) */
+    --ps-font-size-heading-1: 36px;
+    --ps-line-height-heading-1: 49.104px;
+    --ps-font-weight-heading-1: 900;
+    --ps-font-size-heading-2: 28px;
+    --ps-line-height-heading-2: 38.192px;
+    --ps-font-weight-heading-2: 800;
+    --ps-font-size-heading-3: 22px;
+    --ps-line-height-heading-3: 30.008px;
+    --ps-font-weight-heading-3: 700;
+    --ps-font-size-heading-4: 18px;
+    --ps-line-height-heading-4: 24.552px;
+    --ps-font-weight-heading-4: 700;
+    --ps-font-size-heading-5: 16px;
+    --ps-line-height-heading-5: 21.824px;
+    --ps-font-weight-heading-5: 600;
+    --ps-font-size-body: 16px;
+    --ps-line-height-body: 21.824px;
+    --ps-font-size-body-small: 14px;
+    --ps-line-height-body-small: 19.096px;
+    --ps-font-size-caption: 13px;
+    --ps-line-height-caption: 17.732px;
+    --ps-font-size-overline: 11px;
+    --ps-line-height-overline: 15.004px;
+
+    /* Desktop V4 shell defaults */
+    --ps-shell-titlebar-height: 48px;
+    --ps-shell-rail-width: 54px;
+    --ps-shell-content-width: 1200px;
+    --ps-shell-content-gap: 25px;
+    --ps-shell-stroke: rgba(146, 146, 146, 0.2);
+
+    --ps-radius-sm: 8px;
+    --ps-radius-md: 10px;
+    --ps-radius-lg: 12px;
+    --ps-radius-xl: 16px;
+}
+
+[data-theme='dark'] {
+    color-scheme: dark;
+}
+
+[data-theme='light'] {
+    color-scheme: light;
+}

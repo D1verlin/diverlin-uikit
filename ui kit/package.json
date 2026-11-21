@@ -1,0 +1,79 @@
+{
+  "name": "@diverlin/uikit",
+  "version": "1.0.0",
+  "description": "Diverlin UI Kit — framework-agnostic Web Components and pure CSS design system with light/dark themes, local fonts, and opt-in oklch accents.",
+  "homepage": "https://d1verlin.github.io/diverlin-uikit/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/D1verlin/diverlin-uikit.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.ts",
+      "import": "./dist/actions.js"
+    },
+    "./inputs": {
+      "types": "./dist/inputs.d.ts",
+      "import": "./dist/inputs.js"
+    },
+    "./layout": {
+      "types": "./dist/layout.d.ts",
+      "import": "./dist/layout.js"
+    },
+    "./navigation": {
+      "types": "./dist/navigation.d.ts",
+      "import": "./dist/navigation.js"
+    },
+    "./feedback": {
+      "types": "./dist/feedback.d.ts",
+      "import": "./dist/feedback.js"
+    },
+    "./data-display": {
+      "types": "./dist/data-display.d.ts",
+      "import": "./dist/data-display.js"
+    },
+    "./effects": {
+      "types": "./dist/effects.d.ts",
+      "import": "./dist/effects.js"
+    },
+    "./styles": "./dist/assets/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "src/components/**/*.ts"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc --noEmit && vite build && vite build --config vite.global.config.ts",
+    "build:global": "vite build --config vite.global.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "uikit",
+    "design-system",
+    "css-variables",
+    "diverlin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "happy-dom": "^21.0.4",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^5.1.1"
+  }
+}

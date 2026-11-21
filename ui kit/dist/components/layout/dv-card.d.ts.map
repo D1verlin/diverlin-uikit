@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-card.d.ts","sourceRoot":"","sources":["../../../src/components/layout/dv-card.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,MAAO,SAAQ,aAAa;IACvC,MAAM,CAAC,kBAAkB,WAAuD;IAEhF,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAsD7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAiBzB"}

@@ -1,0 +1,74 @@
+/* Diverlin UI Kit — Design Tokens */
+
+:root {
+  /* Typography */
+  --dv-font-sans: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --dv-font-alt: 'Montserrat Alternates', 'Onest', sans-serif;
+  --dv-font-display: 'Dela Gothic One', 'Onest', sans-serif;
+  --dv-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+
+  /* Fluid & Fixed Type Scale */
+  --dv-text-display: clamp(2rem, 4vw, 3.25rem);
+  --dv-leading-display: 1.08;
+
+  --dv-text-h1: clamp(1.75rem, 2.8vw, 2.375rem);
+  --dv-leading-h1: 1.15;
+
+  --dv-text-h2: clamp(1.375rem, 2vw, 1.75rem);
+  --dv-leading-h2: 1.22;
+
+  --dv-text-h3: 1.25rem;
+  --dv-leading-h3: 1.3;
+
+  --dv-text-h4: 1.0625rem;
+  --dv-leading-h4: 1.35;
+
+  --dv-text-body: 0.9375rem; /* 15px */
+  --dv-leading-body: 1.55;
+
+  --dv-text-sm: 0.875rem; /* 14px */
+  --dv-leading-sm: 1.45;
+
+  --dv-text-xs: 0.75rem; /* 12px */
+  --dv-leading-xs: 1.4;
+
+  /* Spacing Scale (4px base) */
+  --dv-space-0: 0px;
+  --dv-space-1: 4px;
+  --dv-space-2: 8px;
+  --dv-space-3: 12px;
+  --dv-space-4: 16px;
+  --dv-space-5: 20px;
+  --dv-space-6: 24px;
+  --dv-space-8: 32px;
+  --dv-space-10: 40px;
+  --dv-space-12: 48px;
+  --dv-space-16: 64px;
+
+  /* Radii — restrained, no rounded-2xl everywhere */
+  --dv-radius-none: 0px;
+  --dv-radius-xs: 4px;
+  --dv-radius-sm: 6px;
+  --dv-radius-md: 8px;
+  --dv-radius-lg: 12px;
+
+  /* Motion — transform & opacity only, 120–240ms */
+  --dv-duration-fast: 120ms;
+  --dv-duration-base: 180ms;
+  --dv-duration-slow: 240ms;
+  --dv-ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Layout */
+  --dv-container-sm: 640px;
+  --dv-container-md: 920px;
+  --dv-container-lg: 1200px;
+  --dv-container-xl: 1360px;
+
+  /* Z-index */
+  --dv-z-sticky: 20;
+  --dv-z-dropdown: 40;
+  --dv-z-overlay: 60;
+  --dv-z-modal: 70;
+  --dv-z-toast: 80;
+  --dv-z-tooltip: 90;
+}

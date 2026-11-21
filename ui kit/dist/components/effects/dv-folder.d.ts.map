@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-folder.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-folder.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,QAAS,SAAQ,aAAa;IACzC,MAAM,CAAC,kBAAkB,WAAqB;IAE9C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CA6E7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CA0BzB"}

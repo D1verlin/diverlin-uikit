@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-scroll-velocity.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-scroll-velocity.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAA6B,MAAM,yBAAyB,CAAC;AAEnF,qBAAa,gBAAiB,SAAQ,aAAa;IACjD,MAAM,CAAC,kBAAkB,WAAqB;IAE9C,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAqC7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAkBzB"}

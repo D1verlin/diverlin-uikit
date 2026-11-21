@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-magnetic.d.ts","sourceRoot":"","sources":["../../../src/components/effects/dv-magnetic.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,UAAW,SAAQ,aAAa;IAC3C,MAAM,CAAC,kBAAkB,WAA4B;IAErD,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAY7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAwBzB"}

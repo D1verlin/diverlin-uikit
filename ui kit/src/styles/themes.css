@@ -1,0 +1,154 @@
+/* Diverlin UI Kit — Themes (light, dark) & Opt-in Accent / Gradient Presets
+   All gradients use oklch interpolation and clean high-chroma stops (zero muddy brown/gray midtones). */
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  --dv-bg: #ffffff;
+  --dv-surface: #ebedf0;
+  --dv-card-bg: #f3f4f6;
+  --dv-surface-elevated: #ffffff;
+  --dv-surface-hover: #dfe2e7;
+  --dv-surface-active: #d1d5dc;
+
+  --dv-border: rgba(17, 19, 24, 0.1);
+  --dv-border-subtle: rgba(17, 19, 24, 0.06);
+  --dv-border-hover: rgba(17, 19, 24, 0.22);
+  --dv-border-focus: #18181b;
+
+  --dv-text-primary: #111318;
+  --dv-text-secondary: #434854;
+  --dv-text-muted: #59606e;
+  --dv-text-disabled: #8f96a3;
+
+  --dv-accent: #18181b;
+  --dv-accent-hover: #2e2e36;
+  --dv-accent-fg: #ffffff;
+  --dv-accent-subtle: #ebedf2;
+
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #09090b 0%, #52525b 100%);
+  --dv-gradient-surface: linear-gradient(135deg in oklch, #d4d8e0 0%, #f3f4f6 55%, #ffffff 100%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #09090b 0%, #71717a 100%);
+
+  --dv-danger: #b91c1c;
+  --dv-success: #15803d;
+  --dv-warning: #a16207;
+  --dv-info: #1d4ed8;
+
+  --dv-shadow-sm: 0 1px 3px rgba(17, 19, 24, 0.06);
+  --dv-shadow-md: 0 8px 24px rgba(17, 19, 24, 0.09), 0 1px 3px rgba(17, 19, 24, 0.05);
+  --dv-shadow-lg: 0 16px 38px rgba(17, 19, 24, 0.14);
+
+  --dv-skeleton-base: #e9ecf1;
+  --dv-skeleton-shine: #f4f6f9;
+  --dv-focus-ring: 0 0 0 2px color-mix(in srgb, var(--dv-accent) 20%, transparent);
+  --dv-scrollbar-thumb: rgba(17, 19, 24, 0.18);
+  --dv-scrollbar-thumb-hover: rgba(17, 19, 24, 0.34);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --dv-bg: #09090b;
+  --dv-surface: #18181d;
+  --dv-card-bg: #121216;
+  --dv-surface-elevated: #222229;
+  --dv-surface-hover: #282830;
+  --dv-surface-active: #34343e;
+
+  --dv-border: rgba(255, 255, 255, 0.1);
+  --dv-border-subtle: rgba(255, 255, 255, 0.06);
+  --dv-border-hover: rgba(255, 255, 255, 0.22);
+  --dv-border-focus: #e4e4ea;
+
+  --dv-text-primary: #f4f4f6;
+  --dv-text-secondary: #b6b6c2;
+  --dv-text-muted: #8c8c9a;
+  --dv-text-disabled: #5c5c69;
+
+  --dv-accent: #f4f4f6;
+  --dv-accent-hover: #dcdce2;
+  --dv-accent-fg: #09090b;
+  --dv-accent-subtle: #23232c;
+
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #ffffff 0%, #a1a1aa 100%);
+  --dv-gradient-surface: linear-gradient(135deg in oklch, #2e2e3a 0%, #16161c 60%, #101014 100%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #ffffff 0%, #71717a 100%);
+
+  --dv-danger: #f87171;
+  --dv-success: #4ade80;
+  --dv-warning: #fbbf24;
+  --dv-info: #93c5fd;
+
+  --dv-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --dv-shadow-md: 0 8px 20px rgba(0, 0, 0, 0.45);
+  --dv-shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.6);
+
+  --dv-skeleton-base: #1c1c23;
+  --dv-skeleton-shine: #26262f;
+  --dv-focus-ring: 0 0 0 2px color-mix(in srgb, var(--dv-accent) 24%, transparent);
+  --dv-scrollbar-thumb: rgba(255, 255, 255, 0.16);
+  --dv-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+}
+
+/* Global & per-subtree Accent Presets — clean adjacent-hue oklch gradients */
+[data-accent='cobalt'],
+[accent='cobalt'] {
+  --dv-accent: #2563eb;
+  --dv-accent-hover: #1d4ed8;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #2563eb 0%, #0ea5e9 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #3b82f6 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #2563eb 0%, #0ea5e9 100%);
+}
+
+[data-accent='emerald'],
+[accent='emerald'] {
+  --dv-accent: #059669;
+  --dv-accent-hover: #047857;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #059669 0%, #14b8a6 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #10b981 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #059669 0%, #14b8a6 100%);
+}
+
+[data-accent='amber'],
+[accent='amber'] {
+  --dv-accent: #d97706;
+  --dv-accent-hover: #b45309;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #ea580c 0%, #f59e0b 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #f59e0b 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #ea580c 0%, #f59e0b 100%);
+}
+
+[data-accent='rose'],
+[accent='rose'] {
+  --dv-accent: #e11d48;
+  --dv-accent-hover: #be123c;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #e11d48 0%, #ec4899 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #f43f5e 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #e11d48 0%, #ec4899 100%);
+}
+
+[data-accent='violet'],
+[accent='violet'] {
+  --dv-accent: #7c3aed;
+  --dv-accent-hover: #6d28d9;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #6d28d9 0%, #a855f7 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #8b5cf6 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #6d28d9 0%, #a855f7 100%);
+}
+
+[data-accent='sunset'],
+[accent='sunset'] {
+  --dv-accent: #ea580c;
+  --dv-accent-hover: #c2410c;
+  --dv-accent-fg: #ffffff;
+  --dv-gradient-accent: linear-gradient(135deg in oklch, #e11d48 0%, #f97316 100%);
+  --dv-gradient-surface: radial-gradient(125% 110% at 0% 0%, color-mix(in oklch, #f97316 24%, var(--dv-card-bg)) 0%, var(--dv-card-bg) 75%);
+  --dv-gradient-text: linear-gradient(135deg in oklch, #e11d48 0%, #f97316 100%);
+}

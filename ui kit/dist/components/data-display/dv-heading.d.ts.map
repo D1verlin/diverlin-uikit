@@ -1,0 +1,1 @@
+{"version":3,"file":"dv-heading.d.ts","sourceRoot":"","sources":["../../../src/components/data-display/dv-heading.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAiB,MAAM,yBAAyB,CAAC;AAEvE,qBAAa,SAAU,SAAQ,aAAa;IAC1C,MAAM,CAAC,kBAAkB,WAAyC;IAElE,SAAS,CAAC,MAAM,KAAK,eAAe,IAAI,MAAM,CAsB7C;IAED,SAAS,CAAC,MAAM,IAAI,IAAI;CAUzB"}

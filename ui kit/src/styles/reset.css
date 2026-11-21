@@ -1,0 +1,81 @@
+/* Diverlin UI Kit — Base Reset & Minimal Scrollbars */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dv-scrollbar-thumb) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--dv-scrollbar-thumb);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--dv-scrollbar-thumb-hover);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: var(--dv-font-sans);
+  font-size: 16px;
+  line-height: var(--dv-leading-body);
+  color: var(--dv-text-primary);
+  background-color: var(--dv-bg);
+}
+
+body {
+  margin: 0;
+  font-family: var(--dv-font-sans);
+  font-size: var(--dv-text-body);
+  line-height: var(--dv-leading-body);
+  color: var(--dv-text-primary);
+  background-color: var(--dv-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img, picture, svg, video, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

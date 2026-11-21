@@ -1,0 +1,112 @@
+{
+  "name": "@pulsesync/uikit",
+  "version": "2.1.5",
+  "description": "PulseSync UI Kit — shared component library for PulseSync apps",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.ts",
+      "import": "./dist/actions.js",
+      "require": "./dist/actions.cjs"
+    },
+    "./layout": {
+      "types": "./dist/layout.d.ts",
+      "import": "./dist/layout.js",
+      "require": "./dist/layout.cjs"
+    },
+    "./navigation": {
+      "types": "./dist/navigation.d.ts",
+      "import": "./dist/navigation.js",
+      "require": "./dist/navigation.cjs"
+    },
+    "./inputs": {
+      "types": "./dist/inputs.d.ts",
+      "import": "./dist/inputs.js",
+      "require": "./dist/inputs.cjs"
+    },
+    "./feedback": {
+      "types": "./dist/feedback.d.ts",
+      "import": "./dist/feedback.js",
+      "require": "./dist/feedback.cjs"
+    },
+    "./data-display": {
+      "types": "./dist/data-display.d.ts",
+      "import": "./dist/data-display.js",
+      "require": "./dist/data-display.cjs"
+    },
+    "./styles": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "release:local": "node scripts/publish-local.mjs"
+  },
+  "peerDependencies": {
+    "framer-motion": ">=10.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "react-is": ">=16.0.0",
+    "recharts": ">=2.0.0"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.2",
+    "clsx": "^2.1.1",
+    "react-is": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@xyflow/react": "^12.10.2",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "framer-motion": "^12.38.0",
+    "glob": "^13.0.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "recharts": "^3.8.1",
+    "sass": "^1.99.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PulseSync-LLC/PulseSync-UIKit.git"
+  },
+  "homepage": "https://github.com/PulseSync-LLC/PulseSync-UIKit#readme",
+  "bugs": {
+    "url": "https://github.com/PulseSync-LLC/PulseSync-UIKit/issues"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "uikit",
+    "pulsesync",
+    "design-system"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
