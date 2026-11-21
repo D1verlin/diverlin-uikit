@@ -432,7 +432,7 @@ export const COMPONENT_DOCS: ComponentDoc[] = [
     controls: [
       { key: 'size', label: 'Размер', type: 'select', options: ['sm', 'md', 'lg'], defaultValue: 'md' },
       { key: 'placeholder', label: 'Placeholder', type: 'text', defaultValue: 'Поиск компонентов...' },
-      { key: 'shortcut', label: 'Шорткат', type: 'text', defaultValue: 'Ctrl+K' },
+      { key: 'shortcut', label: 'Шорткат', type: 'text', defaultValue: 'Alt+K' },
       { key: 'loading', label: 'Загрузка', type: 'boolean', defaultValue: false },
       { key: 'disabled', label: 'Отключён', type: 'boolean', defaultValue: false },
     ],
@@ -828,7 +828,7 @@ export const COMPONENT_DOCS: ComponentDoc[] = [
       <dv-stack gap="4" style="width:100%;">
         <dv-code lang="${s.lang}" code="import { setTheme } from '@diverlin/uikit';\nsetTheme('dark');"></dv-code>
         <dv-stack direction="horizontal" gap="2" align="center">
-          <dv-kbd>Ctrl</dv-kbd>
+          <dv-kbd>Alt</dv-kbd>
           <dv-text variant="muted" inline>+</dv-text>
           <dv-kbd>K</dv-kbd>
           <dv-text variant="sm" inline>Быстрый поиск по документации</dv-text>
@@ -836,7 +836,7 @@ export const COMPONENT_DOCS: ComponentDoc[] = [
       </dv-stack>
     `,
     buildCode: (s) =>
-      `<dv-code lang="${s.lang}" code="setTheme('dark');"></dv-code>\n<dv-kbd>Ctrl</dv-kbd> + <dv-kbd>K</dv-kbd>`,
+      `<dv-code lang="${s.lang}" code="setTheme('dark');"></dv-code>\n<dv-kbd>Alt</dv-kbd> + <dv-kbd>K</dv-kbd>`,
     specs: [
       { name: 'lang', type: 'string', defaultVal: "'html'", description: 'Подпись языка в шапке блока' },
       { name: 'code', type: 'string', defaultVal: "''", description: 'Текст кода для отображения и копирования' },

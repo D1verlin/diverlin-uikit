@@ -78,7 +78,7 @@ app.innerHTML = `
         <dv-button id="global-search-btn" variant="secondary" size="sm">
           <dv-icon name="search" size="14"></dv-icon>
           <span>Поиск</span>
-          <dv-kbd>Ctrl+K</dv-kbd>
+          <dv-kbd>Alt+K</dv-kbd>
         </dv-button>
         <div style="width:132px;">
           <dv-select
@@ -884,7 +884,16 @@ globalCmd?.setAttribute('items', JSON.stringify(globalItems));
 
 document.getElementById('global-search-btn')?.addEventListener('click', () => globalCmd?.show());
 document.addEventListener('keydown', (e) => {
-  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+  const isAltK = e.altKey && !e.ctrlKey && !e.metaKey && (e.code === 'KeyK' || e.key.toLowerCase() === 'k' || e.key.toLowerCase() === 'л');
+  const path = e.composedPath();
+  const inEditable = path.some(
+    (node) =>
+      node instanceof HTMLElement &&
+      (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA' || node.isContentEditable),
+  );
+  const isSlash = !inEditable && !e.altKey && !e.ctrlKey && !e.metaKey && e.key === '/';
+
+  if (isAltK || isSlash) {
     e.preventDefault();
     globalCmd?.show();
   }
